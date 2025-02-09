@@ -71,9 +71,9 @@ export default function Footer() {
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-500 sm:text-center">
-                        © 2023
-                        <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                            hiteshchoudhary
+                        © 2003 
+                        <a href="https://www.instagram.com/sanyam.p.jain?igsh=b2ZtY21tYjB3eGtj" className="hover:underline">
+                             _sanyamjain1408
                         </a>
                         . All Rights Reserved.
                     </span>
