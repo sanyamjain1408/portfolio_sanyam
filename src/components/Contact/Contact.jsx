@@ -1,11 +1,27 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import { motion } from 'framer-motion';
 
 export default function Contact() {
+    const sam = (e) => {
+        e.preventDefault(); // Prevent form from reloading
+        toast.success("Submit Successfully", {
+          position: "top-center",
+          autoClose: 3000, // Close after 3 sec
+        });
+      };
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="mt-1 overflow-hidden">
+            
+                    <motion.div className="grid grid-cols-1 md:grid-cols-2"
+                     initial={{ opacity: 0, scale: 0.8 }} // 🌀 Start small & hidden
+                     animate={{ opacity: 1, scale: 1 }} // 🔥 Smooth scale-up effect
+                     transition={{ duration: 3, ease: "easeOut" }}
+                    >
+                    
                         <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
                             <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
                                 Get in touch: 
@@ -38,7 +54,7 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+                                    New Colony, Dungarpur, Rajasthan 
                                 </div>
                             </div>
 
@@ -60,11 +76,11 @@ export default function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                                    6377266103
                                 </div>
                             </div>
 
-                            <div className="flex items-center mt-2 text-gray-600">
+                            <div className="flex flex-wrap items-center mt-2 text-gray-600">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -81,9 +97,10 @@ export default function Contact() {
                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                     />
                                 </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                                <div className="flex flex-wrap ml-4 text-md tracking-wide font-semibold w-40">
+                                    sanyamkanu@gmail.com
                                 </div>
+                                
                             </div>
                         </div>
 
@@ -127,14 +144,22 @@ export default function Contact() {
                                 />
                             </div>
 
-                            <button
+                            <button 
+                              onClick={sam}
                                 type="submit"
                                 className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                
                             >
                                 Submit
                             </button>
+                            <ToastContainer/>
                         </form>
-                    </div>
+                   
+                    </motion.div>
+
+                    
+
+
                 </div>
             </div>
         </div>
