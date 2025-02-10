@@ -13,7 +13,7 @@ function Project() {
   return (
     <div className="  flex flex-col pb-5  gap-5 justify-center items-center  sm:grid grid-cols-2 grid-rows-2 sm:gap-10 ">
      
-      <Link to="https://sprightly-pastelito-e064fe.netlify.app/">
+      <Link to="https://sanyamjain-portfolio.netlify.app/">
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
