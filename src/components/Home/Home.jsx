@@ -4,6 +4,7 @@ import { motion } from "framer-motion"; // ✅ Import Framer Motion
 import sanyam from '/src/assets/blue.jpg';
 import instagram from '/src/assets/insta.jpg';
 import linkedin from '/src/assets/linkedin.webp';
+import github from '/src/assets/github.webp';
 export default function Home() {
   return (
     <motion.div 
@@ -20,8 +21,8 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }} // 🔥 Smooth scale-up effect
           transition={{ duration: 3, ease: "easeOut" }} // 📌 Smooth effect
           >
-            <h2 className="text-4xl text-center font-bold sm:text-5xl">
-              Sanyam Jain
+            <h2 className="text-4xl text-center font-serif font-bold sm:text-5xl sm:text-right sm:font-serif    hover:sm:text-6xl ease-in-out duration-300 ">
+            Hello , <br /> I'm Sanyam Jain ,
               <br />
               <span className="text-sm">Web Developer, UI/UX Designer</span>
             </h2>
@@ -40,6 +41,13 @@ export default function Home() {
             >
               <img className="w-6 h-6 ml-2 rounded-md" src={linkedin} />
               <h1>sanyam jain</h1>
+            </Link>
+            <Link
+              className="flex flex-row text-white items-center gap-3 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
+              to="https://github.com/sanyamjain1408"
+            >
+              <img className="w-6 h-6 ml-2   rounded-md" src={github} />
+              <h1>sanyamjain1408</h1>
             </Link>
             </div>
           </motion.div>
