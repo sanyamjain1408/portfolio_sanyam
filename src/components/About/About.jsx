@@ -13,7 +13,8 @@ export default function About() {
                 >
                 <div className="flex flex-col sm:flex-row space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
-                        <img className='w-96 p-4 rounded-3xl bg-gray-500 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 ease-in-out duration-200'
+                        <img className='w-96 p-4 rounded-3xl bg-gray-500 shadow-2xl shadow-black hover:p-0
+                                        hover:shadow-blue-400 ease-in-out duration-200'
                             src={sanyam}
                             alt="image"
                         />

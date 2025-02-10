@@ -16,7 +16,8 @@ function Project() {
       <Link to="https://sprightly-pastelito-e064fe.netlify.app/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                       ease-in-out duration-200 "
             src={first}
             alt=""
           />
@@ -29,7 +30,8 @@ function Project() {
       <Link to="https://clipcodeapp-two.vercel.app/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                       ease-in-out duration-200 "
             src={second}
             alt=""
           />
@@ -42,7 +44,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/passwordgenerator/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black
+                        ease-in-out duration-200 "
             src={third}
             alt=""
           />
@@ -55,7 +58,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/number-guessing-game/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                       ease-in-out duration-200 "
             src={forth}
             alt=""
           />
@@ -68,7 +72,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/bmi_calculator/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                        ease-in-out duration-200 "
             src={five}
             alt=""
           />
@@ -81,7 +86,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/bmi_calculator/">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black
+                        ease-in-out duration-200 "
             src={six}
             alt=""
           />
@@ -94,7 +100,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/switch_color">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                      ease-in-out duration-200 "
             src={seven}
             alt=""
           />
@@ -107,7 +114,8 @@ function Project() {
       <Link to="https://github.com/sanyamjain1408/google-web-page">
         <div className="flex flex-col justify-center items-center  ">
           <img
-            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                      ease-in-out duration-200 "
             src={eight}
             alt=""
           />

@@ -21,7 +21,8 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }} // 🔥 Smooth scale-up effect
           transition={{ duration: 3, ease: "easeOut" }} // 📌 Smooth effect
           >
-            <h2 className="text-4xl text-center font-serif font-bold sm:text-5xl sm:text-right sm:font-serif    hover:sm:text-6xl ease-in-out duration-300 ">
+            <h2 className="text-4xl text-center font-serif font-bold sm:text-5xl sm:text-right sm:font-serif  
+                          hover:sm:text-6xl ease-in-out duration-300 ">
             Hello , <br /> I'm Sanyam Jain ,
               <br />
               <span className="text-sm">Web Developer, UI/UX Designer</span>
@@ -29,21 +30,24 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row  gap-3 ">
             <Link
-              className="flex flex-row text-white items-center  gap-2 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
+              className="flex flex-row text-white items-center  gap-2 px-3 py-3 font-medium bg-blue-400
+                          rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
               to="https://www.instagram.com/sanyam.p.jain?igsh=b2ZtY21tYjB3eGtj"
             >
               <img className="w-6 h-6 ml-2 rounded-md" src={instagram}/>
               <h1>sanyam.p.jain</h1>
             </Link>
             <Link
-              className="flex flex-row text-white items-center gap-3 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
+              className="flex flex-row text-white items-center gap-3 px-3 py-3 font-medium bg-blue-400 
+                         rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
               to="https://www.linkedin.com/in/sanyamjain14/"
             >
               <img className="w-6 h-6 ml-2 rounded-md" src={linkedin} />
               <h1>sanyam jain</h1>
             </Link>
             <Link
-              className="flex flex-row text-white items-center gap-1.5 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
+              className="flex flex-row text-white items-center gap-1.5 px-3 py-3 font-medium bg-blue-400 
+                         rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
               to="https://github.com/sanyamjain1408"
             >
               <img className="w-5 h-6 ml-2   rounded-md" src={github} />
@@ -60,7 +64,8 @@ export default function Home() {
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <img
-            className="w-96 p-0 rounded-3xl bg-gray-100 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 ease-in-out duration-200"
+            className="w-96 p-0 rounded-3xl bg-gray-100 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 
+                        ease-in-out duration-200"
             src={sanyam}
             alt="image1"
           />
