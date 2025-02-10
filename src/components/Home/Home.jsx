@@ -60,7 +60,7 @@ export default function Home() {
           transition={{ duration: 3, ease: "easeOut" }}
         >
           <img
-            className="w-96 p-4 rounded-3xl bg-gray-500 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 ease-in-out duration-200"
+            className="w-96 p-0 rounded-3xl bg-gray-100 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 ease-in-out duration-200"
             src={sanyam}
             alt="image1"
           />
