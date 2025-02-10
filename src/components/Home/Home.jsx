@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // ✅ Import Framer Motion
-
+import sanyam from '/src/assets/blue.jpg'
 export default function Home() {
   return (
     <motion.div 
@@ -51,7 +51,7 @@ export default function Home() {
         >
           <img
             className="w-96 p-4 rounded-3xl bg-gray-500 shadow-2xl shadow-black hover:p-0 hover:shadow-blue-400 ease-in-out duration-200"
-            src="../src/assets/blue.jpg"
+            src={sanyam}
             alt="image1"
           />
         </motion.div>
