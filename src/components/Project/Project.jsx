@@ -1,5 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import first from "/src/assets/portfolio.png"
+import second from "/src/assets/clipcode.png"
+import third from "/src/assets/password_generator.png"
+import forth from "/src/assets/number_guessing_game.png"
+import five from "/src/assets/bmi_calculator.png"
+import six from"/src/assets/change_bgcolor_every_sec.png"
+import seven from"/src/assets/color_switcher.png"
+import eight from"/src/assets/google.png"
 
 function Project() {
   return (
@@ -9,7 +17,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/portfolio.png"
+            src={first}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -22,7 +30,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/clipcode.png"
+            src={second}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -35,7 +43,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/password_generator.png"
+            src={third}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -48,7 +56,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/number_guessing_game.png"
+            src={forth}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -61,7 +69,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/bmi_calculator.png"
+            src={five}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -74,7 +82,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/change_bgcolor_every_sec.png"
+            src={six}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -87,7 +95,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/color_switcher.png"
+            src={seven}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
@@ -100,7 +108,7 @@ function Project() {
         <div className="flex flex-col justify-center items-center  ">
           <img
             className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black ease-in-out duration-200 "
-            src="../src/assets/google.png"
+            src={eight}
             alt=""
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">

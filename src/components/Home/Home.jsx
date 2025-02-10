@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // ✅ Import Framer Motion
 import sanyam from '/src/assets/blue.jpg'
+import instagram from '/src/assets/insta.jpg'
+import linkedin from '/src/assets/linkedin.webp'
 export default function Home() {
   return (
     <motion.div 
@@ -29,14 +31,14 @@ export default function Home() {
               className="flex flex-row text-white items-center  gap-2 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
               to="https://www.instagram.com/sanyam.p.jain?igsh=b2ZtY21tYjB3eGtj"
             >
-              <img className="w-6 h-6 ml-2 rounded-md" src="../src/assets/insta.jpg" />
+              <img className="w-6 h-6 ml-2 rounded-md" src={instagram}/>
               <h1>sanyam.p.jain</h1>
             </Link>
             <Link
               className="flex flex-row text-white items-center gap-3 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
-              to="https://www.instagram.com/sanyam.p.jain?igsh=b2ZtY21tYjB3eGtj"
+              to="https://www.linkedin.com/in/sanyamjain14/"
             >
-              <img className="w-6 h-6 ml-2 rounded-md" src="../src/assets/linkedin.webp" />
+              <img className="w-6 h-6 ml-2 rounded-md" src={linkedin} />
               <h1>sanyam jain</h1>
             </Link>
             </div>
