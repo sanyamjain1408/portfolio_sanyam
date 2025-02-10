@@ -43,10 +43,10 @@ export default function Home() {
               <h1>sanyam jain</h1>
             </Link>
             <Link
-              className="flex flex-row text-white items-center gap-3 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
+              className="flex flex-row text-white items-center gap-1.5 px-3 py-3 font-medium bg-blue-400 rounded-lg hover:bg-blue-600 ease-in-out duration-300 w-44"
               to="https://github.com/sanyamjain1408"
             >
-              <img className="w-6 h-6 ml-2   rounded-md" src={github} />
+              <img className="w-5 h-6 ml-2   rounded-md" src={github} />
               <h1>sanyamjain1408</h1>
             </Link>
             </div>
