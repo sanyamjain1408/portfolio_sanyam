@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // ✅ Import Framer Motion
-import sanyam from '/src/assets/blue.jpg'
-import instagram from '/src/assets/insta.jpg'
-import linkedin from '/src/assets/linkedin.webp'
+import sanyam from '/src/assets/blue.jpg';
+import instagram from '/src/assets/insta.jpg';
+import linkedin from '/src/assets/linkedin.webp';
 export default function Home() {
   return (
     <motion.div 
@@ -13,7 +13,7 @@ export default function Home() {
       transition={{ duration: 1, ease: "easeOut" }} // ⏳ Smooth transition
     >
       <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-        <div className=" z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
           <motion.div
             className="flex flex-col items-center max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto"
             initial={{ opacity: 0, scale: 0.8 }} // 🌀 Start small & hidden
