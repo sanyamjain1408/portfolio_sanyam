@@ -8,6 +8,7 @@ import five from "/src/assets/bmi_calculator.png"
 import six from"/src/assets/change_bgcolor_every_sec.png"
 import seven from"/src/assets/color_switcher.png"
 import eight from"/src/assets/google.png"
+import nine from"/src/assets/todo.png"
 
 function Project() {
   return (
@@ -121,6 +122,20 @@ function Project() {
           />
           <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
           Google
+            </h1>
+        </div>
+      </Link>
+
+      <Link to="https://todo-lilac-sigma.vercel.app/">
+        <div className="flex flex-col justify-center items-center  ">
+          <img
+            className="w-[40rem] border-black mt-5   rounded-3xl p-3  shadow-2xl  hover:p-0 hover:shadow-black 
+                      ease-in-out duration-200 "
+            src={nine}
+            alt=""
+          />
+          <h1 className="text-2xl text-black font-bold hover:text-3xl ease-in-out duration-200 ">
+          Todo
             </h1>
         </div>
       </Link>
