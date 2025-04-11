@@ -24,6 +24,14 @@ export default function Contact() {
         });
         return; // stop the form from submitting
       }
+      if (!/^\d{10}$/.test(tel)) {
+        toast.error("Phone number must be exactly 10 digits! or a number ", {
+          position: "top-center",
+          autoClose: 3000,
+        });
+        return;
+      }
+    
   
     try {
       await addDoc(collection(db, "contacts"), {
