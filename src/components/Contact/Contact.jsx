@@ -1,16 +1,52 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from 'framer-motion';
 
+import { db } from '../../firebase'; // Make sure the path is correct
+import { collection, addDoc } from 'firebase/firestore';
+
+
+
 export default function Contact() {
-    const sam = (e) => {
-        e.preventDefault(); // Prevent form from reloading
-        toast.success("Submit Successfully", {
+
+    const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [tel, setTel] = useState('');
+
+  const sam = async (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !tel) {
+        toast.warning("Please fill all the fields!", {
           position: "top-center",
-          autoClose: 3000, // Close after 3 sec
+          autoClose: 3000,
         });
-      };
+        return; // stop the form from submitting
+      }
+  
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name: name,
+        email: email,
+        tel: tel,
+      });
+  
+      toast.success("Submitted Successfully", {
+        position: "top-center",
+        autoClose: 3000,
+      });
+  
+      // Clear the form
+      setName('');
+      setEmail('');
+      setTel('');
+    } catch (error) {
+      toast.error("Submission Failed");
+      console.error("Error adding document: ", error);
+    }
+  };
+  
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -118,6 +154,8 @@ export default function Contact() {
                                     name="name"
                                     id="name"
                                     placeholder="Full Name"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400
                                              text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
@@ -132,6 +170,8 @@ export default function Contact() {
                                     name="email"
                                     id="email"
                                     placeholder="Email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400
                                                text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
@@ -146,8 +186,10 @@ export default function Contact() {
                                     name="tel"
                                     id="tel"
                                     placeholder="Telephone Number"
+                                    value={tel}
+                                    onChange={(e) => setTel(e.target.value)}
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400
-                                                 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                              text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
